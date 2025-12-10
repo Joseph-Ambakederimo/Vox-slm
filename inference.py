@@ -1,6 +1,6 @@
 import torch
 import os
-from model.model import VoxModel
+from model.model import LuteModel
 from model.config import ModelConfig
 from tokenizers import ByteLevelBPETokenizer
 
@@ -23,7 +23,7 @@ class SLMPredictor:
         self.tokenizer = ByteLevelBPETokenizer(vocab_path, merges_path)
 
         # 3. Load Model Structure
-        self.model = VoxModel(self.config).to(self.device)
+        self.model = LuteModel(self.config).to(self.device)
 
         # 4. Load Weights (Checkpoint)
         checkpoint_path = os.path.join(model_dir, "checkpoint_latest.pt")

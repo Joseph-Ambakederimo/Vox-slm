@@ -1,5 +1,5 @@
 from model.config import ModelConfig
-from model.model import VoxModel
+from model.model import LuteModel
 # Assuming trainer.py has the correct imports for AdamW, load_checkpoint, etc.
 from training.trainer import train, evaluate, load_checkpoint
 import torch
@@ -19,7 +19,7 @@ print(f"Effective Batch Size: {config.batch_size * config.gradient_accumulation_
 # -----------------------
 # MODEL & OPTIMIZER SETUP
 # -----------------------
-model = VoxModel(config).to(device)
+model = LuteModel(config).to(device)
 
 # Assuming you replaced Muon with AdamW in trainer.py
 from torch.optim import AdamW 
