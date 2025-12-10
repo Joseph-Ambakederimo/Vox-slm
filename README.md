@@ -22,8 +22,8 @@ To run lute-slm, you will need Python 3.8+ and the libraries listed in requireme
 
 1. Clone the Repository
 
-git clone [https://github.com/your-username/vox-slm.git](https://github.com/your-username/vox-slm.git)
-cd vox-slm
+git clone [https://github.com/your-username/lute-slm.git](https://github.com/Joseph-Ambakederimo/Lute-slm.git)
+cd lute-slm
 
 
 2. Install Dependencies
